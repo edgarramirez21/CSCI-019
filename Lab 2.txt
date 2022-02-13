@@ -1,0 +1,24 @@
+
+Introductory Networking Lab 2
+
+
+The first section of the lab has us identify the the 7 layers of the OSI model. We begin by identifying what each layer does. Question 10 asks us "which layer does the FTP protocol communicate with?".
+This question had us do a research. With a google search I learned that the FTP protocol communicates with the application layer. 
+
+The following section layed out how encapsulation works. It explained that encapsulation is the process by which data can be sent from one computer to another. When data passes through each layer of the encapsulation process it is given a different name.
+Also, when a computer recieves a message the process works in the reverse order, called de-encapsulation. 
+
+Task 4 had us identify the TCP/IP model. How through TCP you can send data to another computer through a stable connection. Called the "three way handshake". The attempt of a connection is broken down between the client and a server.
+How a request is called a synchronise (SYN) bit and a acknowlegement (ack). These explain the process how the connection to the computers is established. The client makes the request (syn) the server replies (syn/ack) and the server accepts the connection (ack).
+
+Task 5 had us understand the PING command through linux. How linux can send a request to establish a connection. I started this section by booting up the linux virtual machine. In this section it had me ping a website through the command line in the virtial Linux (ping<target>).
+It also explained how you can learn the IP of a website as well as other information. It also had me look up the manual page for the commands of ping. How I can set intervals for the ping (-i) and restrict requests for IPV4 adresses (-4).
+
+Task 6 continues the work through the virtual machine in the command line. It showed us the "traceroute" command and its uses. The traceroute command shows the several servers and end-points it detects to get to one target. Again I used the manual page to learn the different commands that can be used through traceroute.
+
+Task 7 had us learn the WHOIS command in Linux. The WHOIS command shows you the information of a domain. The IP of the domain is revealed as well as the registration date, location of the server and a email address of a contact. I attepted to install and update the WHOIS app through linux by using the "sudo apt update && sudo apt-get install whois".
+But then realized I couldnt do it through the machine and instead used the web version and looked up the facebook domain as an example. It told me the zip code of the server location, the date it was registered. I also looked up the information for Microsoft.com and where it was based.
+
+Task 8 had us learn the DIG command as well as DNS (domain name system). DNS is how a URL gets converted into a IP address. 
+DNS allows to ask a server to give us the IP address of the website you are trying to reach. It taught us that a computer stores IP information of a domain in the local cache. If a computer is accessing a new website for the first time it will learn the IP address and then store it in the local cache for faster accessing.
+  
