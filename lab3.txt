@@ -1,0 +1,27 @@
+LAB WEEK 3
+
+The lab starts with talking about the different topologies that are incorporated in network designs.
+It introduced the star, bus, and ring topologies each with their benefits and downsides.
+
+The star topology is when devices are individually connected to a central networking device. Commonly found today
+because it is reliable and scaleable. Its downside is that it is the most expensive of the topologies and requires the most maintenance.
+
+Bus Topology works by having a single connection to a backbone. It is one of the easiest and cost efficient of the topologies but it can be bottlenecked and no other devices can recieve
+or transmit data.
+
+Ring topology is when computers connect directly to each other to form a loop with the added benefit being that there is less cabling required and hardware is less dependent
+The ring topology is also easy to troubleshoot but because of it being one direction for data to travel it isnt very efficient.
+
+
+Part 2 talks about subnetting.
+How subnetting works by splitting the number of hosts that can fit within a network represented by a number called a subnet mask. Octets are the 4 sections of an IP adderess and subnets are used to identify the network, host, and default gateway.
+
+
+The ARP protocol (Address resolution protocol) is the technology that allows devices to identify themselves on a network. The ARP protocol allows the device to associate its mac address with an IP address on the network. By sending a broadcast to the entire 
+network it can communicate with them. A device can store a network to its ledger to quickly communicate with a device, this is called a cache.
+The ARP protocol sends a message (ARP REQUEST) to every device on the network, and if the device has the requested IP address a reply is sent back to the initial device (ARP REPLY).
+
+The last part talks about DHCP. DHCP (Dynamic Host Configuration Protocol) is a protocol that can automatically assign an IP address to a device if it already doesn't have one or if it is needed to entered manually.
+
+DHCP DISCOVER--->DHCP OFFER--->DHCP REQUEST v
+^----------<-------DHCP ACK--------<--------<
