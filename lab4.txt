@@ -1,0 +1,85 @@
+Lab 4
+
+DNS (domain name system) is the way we communicate with devices on the internet without the complex numbers. For example: an IP address 104.26.10.229 is how the computer finds a website that you want to reach
+and instead it is translated and presented to us by having a domain name. Ex: 104.26.10.229 = tryhackme.com
+
+
+Domain Hierarchy
+"." = Root
+
+.edu	.com	.gov	.mil = top-level domains
+
+mlt	tryhackme	google 	    USA		NASA	   ARMY = Second-level domains
+
+TLD (top level domain)- the most right hand part of a domain name. (.com) There are two types of TLD, gTLD (generic Top Level) and ccTLD(country code Top Level Domain)
+
+gTLD is how the user is told the domains name's purpose. 
+
+.com - commercial
+
+.org - Organization
+
+.edu - Education
+
+.gov - Government
+
+ccTLD is used for geographical purposes
+
+.co.uk = United Kingdom
+
+.ca = Canada
+
+
+Second level domain is the domain name of the website itself "tryhackme" (.com). It is limited to 63 characters
+and can only use A-Z, 0-9, and hyphens.
+
+Subdomain sits on the left side of the second-level domain by using a period to separate it "admin." (tryhackme.com). It is also
+limited to 63 characters and can only use A-Z, 0-9, and hyphens.
+
+
+DNS Record Types
+There are multiple types of DNS.
+
+A Record - For IPv4 addresses "104.26.10.229"
+
+AAAA Record - For IPv6 addresses "2606:4700:20::681a:be5"
+
+CNAME Record- resolves another domain name's subdomain. tryhackme.com --> store.tryhackme.com
+
+MX Record- tells the client which order to try the servers.
+
+TXT Record- free text fields where text-based data can be stored. Can be used to list servers that have the authority to send an email on behalf
+of the domain. As well as being able to verify the ownership of the domain where signing up for third party services.
+
+
+Making a Request
+
+What happens when you make a DNS request
+
+1.) Client checks the local cache for the IP address/ if not, makes a request to your "recursive" DNS server
+						|
+						|
+						|
+						V
+2.) Server also checks its local cache and if it finds the appropriate address it will send it back to your local client/if not, it will find the correct answer
+						|
+						|
+						|
+						V
+3.) Root servers act as the backbone, its job is to lead you to the right top-level domain server
+						|
+						|
+						|
+						V
+4.) The TLD server holds the records on where to find the authoritative server to answer the DNS request. 
+	-The authoritatve server is also known as the nameserver for the domain.
+						|
+						|
+						|
+						V
+5.) Lastly the authoritative server is responsible for storing the DNS records for a particular domain name. Depending of the record type the DNS record is sent back to the
+recursive DNS server. It will be cached for later requests and then relayed back to the original client.
+	-DNS records come with a TTL (Time to Live) value. Represented in seconds that the response should be saved locally.
+
+
+In the last section it had us manually look up how to find the CNAME, TXT record, MXC numerical record, and the IP address for "website.thm" 
