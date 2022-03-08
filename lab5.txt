@@ -1,0 +1,60 @@
+LAB5
+
+Active Reconnaissance
+
+Active reconnaissance means to have contact with a target using direct connection
+
+In this section we will learn how to use tools like Ping, traceroute and telnet for active reconnaissance.
+
+
+Web Browser
+
+Using a web browser is a good way to learn information about a target. 
+Through transport the browser can connect to:
+	TCP port 80 when the website is accessed over HTTP
+	TCP port 443 when the website is accessed over HTTPS
+
+PING
+
+The purpose of ping is to see if you can contact the remote system and if they can contact you back to conclude that the remote system is online.
+
+[C1]--->Ping Packet--->[C2]
+ ^---------Reply--------v
+
+In the attack box it had us use the ping commands while using Linux. I learned that ping is used with the ICMP protocol to speak to the second machine.
+	Ping = ICMP echo/type 8
+	Ping Reply = ICMP echo reply/type 0
+
+If we dont get a reply back it could mean a few things
+-second pc is turned off, currently booting, or the OS crashed
+-Unpugged from the network
+-Firewall is blocking the packets
+-Or host system is not connected to the network
+
+Traceroute
+
+Tracerout is the command that will trace the route taken by packets from host to host.
+Its purpose is to find the IP addresses of routers (hops) that a packet has gone through from client to client.
+
+	Mac/Linux - traceroute 10.10.91.149
+ 	Windows - tracert 10.10.91.149
+
+When a packet is sent through traceroute the packet starts with a TIME TO LIVE value of 64 and will decrease by 1 everytime it will pass through a hop.
+If it ever reaches 0 the packet will be dropped and will send a ICMP time-to-live exceeded message to the original sender.
+
+
+Telnet
+
+Teletype Network protocol was created to communicate with a remote system via a command-Line interface. 
+	-Sends all data in cleartexts
+
+NC
+
+Netcat supports both TCP and UDP and can fuction as a client that connects and listens to a port, Can act as a server that also can listen to a port.
+	
+
+
+
+
+
+ 
