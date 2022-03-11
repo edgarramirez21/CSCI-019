@@ -1,0 +1,22 @@
+Lab 6
+
+Cabling 
+
+Twisted pair- consists of two insulated conductors twisted together in shape of a spiral and can come shielded and unshielded.
+	Unshielded- Very cheap, easy to install
+		  - Can be affected by electromagnetic noise interference
+
+3 types of UTP cables
+
+Straight-through cable- Refers to cables that have pin assignments on each end of the cable
+	-Pin 1 Connector A ----> Pin 1 Connector B
+	-Commonly used to connect host to client
+
+
+Crossover Cable - Most commonly used to connect two hosts directly (similar devices)
+
+
+Roll-over cable- Cables that have opposite pin assignments on each end of the cable (router to computer)
+	       -  Pin 1 connector ----> Pin 8 connector B
+
+In this lab it had us virtally connect ports together for all three types of cabling by following the color codes.
