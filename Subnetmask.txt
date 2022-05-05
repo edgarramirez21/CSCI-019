@@ -1,0 +1,109 @@
+Subnetting: Taking a network and dividing it into sub-networks
+
+7 attributes of Subnetting
+Network ID: First IP address in each sub-network
+Broadcast IP: Last IP address in each sub-network
+First Host IP: IP address after the Network ID
+Last Host IP: IP address before the Broadcast IP
+Next Network: Network ID of the next Sub-Network
+#IP Addresses: Number of IP addresses in a sub-network
+CIDR/Subnet: Converting between CIDR/Subnet Mask
+
+
+
+How to make a Subnetting Cheat Sheet
+
+A. Start with 1, double until you reach 128  (right to left)
+B. Subtract top row from 256
+C. From /32, list CIDR notation  (right to left)
+
+128		64		32		16		8		4		2		1    Group Size
+128		192		224		240		248		252		254		255  Subnet Mask
+/25		/26		/27		/28		/29		/30		/31		/32  CIDR
+
+
+
+How to use the cheat Sheet
+
+
+Step 1. Use given CIDR/Mask to find column on sheet
+	A. CIDR/Subnet mask map to each other
+	B. Locate Group Size
+	C. Start at .0 in relevant octet
+	D. Increase by group size until you pass target IP
+
+
+128		64		32		16		8		4		2		1    
+128		192		224		240		248		252		254		255  
+/25		/26		/27		/28		/29		/30		/31		/32 
+
+		Example: 10.1.1.55 /28
+
+
+Network ID: 10.1.1.48
+Broadcast IP: 10.1.1.63
+First Host IP: 10.1.1.49
+Last Host IP: 10.1.1.62
+Next Network: 10.1.1.64
+# IP Addresses: 16  <--Group Size  *usable 14
+CIDR/Subnet: 255.255.255.240
+
+
+
+
+
+1.)
+				199.214.158.158 /26
+
+	
+Network ID: 199.214.158.128
+Broadcast IP: 199.214.158.191 
+First Host IP: 199.214.158.129
+Last Host IP: 199.214.158.190
+Next Network: 199.214.158.192
+
+
+
+2.)
+				220.72.118.193 /27
+
+Network ID: 220.72.118.192
+Broadcast IP: 220.72.118.223
+First Host IP: 220.72.118.193
+Last Host IP: 220.72.118.222
+Next Network: 220.72.118.224
+
+
+3.)
+				216.39.76.1 /24
+
+Network ID: 216.39.76.0
+Broadcast IP: 216.39.76.254
+First Host IP: 216.39.76.1
+Last Host IP: 216.39.76.254
+Next Network: 216.39.77.0
+
+4.)
+
+				214.250.231.106 /28
+
+Network ID: 214.250.231.96
+Broadcast IP: 214.250.231.111
+First Host IP: 214.250.231.97
+Last Host IP: 214.250.231.110
+Next Network: 214.250.231.112
+
+5.)
+
+				111.204.150.228 /21
+				
+Network ID: 111.204.144.0
+Broadcast IP: 111.204.151.255
+First Host IP: 111.204.144.1
+Last Host IP: 111.204.151.254
+Next Network: 111.204.152.0
+
+
+
+
+
