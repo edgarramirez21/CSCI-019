@@ -1,0 +1,11 @@
+Nessus
+
+Nessus is a vulnerability scanner for the linux OS that checks both hardware and software for vulnerabilities.
+
+I began by setting up a ubuntu box on my personal PC to install the nessus scanner. After that I followed the instructions and 
+recieved a key to register my account. I then booted up the box and downloaded nessus through firefox. Using the terminal i then used the sudo dpkg -i 10.1.2_file.deb command to find the file in the downloads folder to install it. 
+I then started the nessus service with the sudo /bin/systemctl start nessusd.service. I then signed into Nessus essentials with the credentials I signed up with and used the activation code I recieved in my email.
+I became familiar with the program and learned where to start a new scan on the virtual machine. I created custom templates and changed plugin properties. 
+The next section had me run my first scan. Using the program to do a basic network scan or a Port Scan. Lastly I got familiar with how to scan a Web application 
+on the virtal machine. 
+ 
