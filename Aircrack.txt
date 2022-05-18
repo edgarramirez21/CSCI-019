@@ -1,0 +1,29 @@
+Wifi Hacking 101
+
+SSID: The network name that you see when you try and connect
+
+ESSID: An SSID that may apply to multiple access points: company office, normally forming a bigger network.
+
+BSSID: An access point MAC (hardware) address
+
+WPA2-PSK: Wifi networks that you connect to by using a password that's the same for everyone
+
+WPA2-EAP: Wifi networks that you authenticate to by providing a username and password, which is sent to a RADIUS server.
+
+RADIUS: A server for authenticating clients, not just for wifi.
+
+
+
+  Aircrack-NG
+
+Aircrack-NG is a program used to evaluate the security of WIFI networks. 
+Used in various aspects of security:
+
+Monitoring: Packet capture and data export to text files for use on third-party tools
+
+Attacking: Replay attacks, de-authentication, and fake access points
+
+Testing: Checking the WIFI cards and drivers.
+
+Cracking: WEP and WPA PSK Cracking 
+
